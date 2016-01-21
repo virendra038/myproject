@@ -1,0 +1,35 @@
+crontab -l = lists user cron table
+crontab -e = create a new cron table
+crontab -r = removes a cron table and all scheduled jobs
+
+1 2 3 4 5 command
+1 = minute(0-59)
+2 = hour(24 hour format)
+3=day of month(1-31)
+4 = month of year(1-12)
+5 = day of week(0-7)
+
+example
+to schedule scan.sh to run on every thursday at 11:11 am
+11 11 * * 4 /home/scan.sh
+
+
+/etc/cron.allow and /etc/cron.deny control who canand who cannot use cron
+
+
+# fuck avahi
+sudo -i
+gedit /etc/default/avahi-daemon
+
+
+pwd: print working dir
+ls : list of everything in dir
+cd: used for navigation
+cd .. : back
+cd / : go to root directory
+cp a b : copy file a with name b
+rm : use to delete a file
+cp a path : copy to a folder
+mkdir  dir_name: create a new dir
+rmdir dirname: delete dir
+rm -r dir_name: delete dir containing  some files
