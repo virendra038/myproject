@@ -1,5 +1,7 @@
 #include<Sleep_n0m1.h>
 #include "HX711.h"
+#include<EEPROM.h>
+char sID[7];
 
 #define calibration_factor -13110.0 
 
@@ -13,6 +15,11 @@ HX711 scale(DOUT, CLK);
 void setup() {
   Serial.begin(9600);
  //sleepTime=  10000;
+ for(int i=0; i<6; i++)
+ {
+  sID[i] = EEPROM.read(i);
+  }
+  Serial.println(sID);
  pinMode(6,OUTPUT);
  
 
