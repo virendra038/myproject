@@ -1,0 +1,25 @@
+# use controllerAs to remove $scope
+# $onInit
+# $onDestroy
+# $onChanges
+# $postLink
+
+--->> component Router
+
+# Components are native
+# Angular 2 Compatible
+#Lifecycle hooks
+#Nested Routing
+#Link generation
+
+# <a ng-link="['Link']">List</a>
+
+--->> more lifecycle hooks
+
+$canActivate  // tell the router if user is trying to activate the component
+$routerOnActivate	// tell the router if the component is activated
+$routerCanActivate	//
+$routerCanDeactivate
+$routerOnDeactivate
+$routerCanReuse
+
