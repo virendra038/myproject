@@ -1,0 +1,42 @@
+--->>
+
+>> Web Stack overview
+#Server responsible for backend processing
+  & Data repository
+
+#network : DNS, TCP/IP
+
+#Browser: Rendering,DOM
+
+
+>> Server
+
+# Insufficient access control (Server fault)
+#SQL injection (cyber crime) most dangerous
+
+>> Network
+# DNS hijacking
+# Man in the middle
+
+>>browser
+#CSRF (cross site request forgery)
+# Cross site scripting
+
+--->> Defending the Stack
+>>Server
+#Authentication and Authorization
+# Parameterization of SQL queries
+
+>>Network
+#VPN[virtual private network] (client create a secret tunnel to the vpn provider)
+
+# transport layer protection (TLS)
+
+>>Browser
+# native browser defenses
+# HTTP only cookies (should not be sccessible by client script)
+
+--->>circumventing the client (Introduction to fiddler)
+
+--->>Traditional Website Requests (Page LifeCycle)
+
