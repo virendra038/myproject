@@ -23,3 +23,37 @@ $routerCanDeactivate
 $routerOnDeactivate
 $routerCanReuse
 
+
+--->>two way bindings 
+# put bindings in component with the terms you wants to bind
+#invoke the component with that binding terms
+#put $ctrl.bindingterms in the html
+
+
+--->> bootstrap Grid System
+for types of grid are there
+# .col-xs 320
+# .col-sm 768
+# .col-md 992
+# .col-lg 1200
+
+Note: Also use visible and hidden classes
+ 
+# use one two or three according to the need in single div
+
+
+--->>Emmet(use with tab)
+#html:5
+#header+main+footer for the multiple tags
+#div.header+div.footer for multiple tags with class
+
+or by default you can use .header+.main it will give you the div
+same for id use the # instead of (.)dot
+
+# use > sign for generating child e.g: ul>li
+
+# use small brackets and multiplications symbol for replicate the same div or the sets of divs
+
+
+
+
