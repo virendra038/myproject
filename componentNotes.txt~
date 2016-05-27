@@ -58,4 +58,6 @@ same for id use the # instead of (.)dot
 
 #use layout instead of classes for defining rows and column 
 #use flex to provide flexibility
+#use hide and show at different resolution
+# class= "scrollable-nav-content"
 
