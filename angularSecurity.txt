@@ -39,4 +39,33 @@
 --->>circumventing the client (Introduction to fiddler)
 
 --->>Traditional Website Requests (Page LifeCycle)
+--->>Cookies vs Token
 
+Cookies
+They are implicit- they are auto sent with every request to the domain
+They pose a CSRF risk because of this
+They don't work for domains they're not valid for
+They persist when the DOM is unloaded
+
+Tokens
+They are explicit add to the request header
+NO csrf risk
+They can be sent to any domain
+They need to be coded to persist after dom unloded
+
+Note: everything is public so be careful what you are about to write in javascript
+
+Note: only provide what is absolutely required
+
+Note: Always use HTTP only cookie
+
+use html5 features storage
+make cookies secore https
+
+note: we can't used cookie based authentication because here is one example : cookies are sent with every request and if anyone has your logout api he can make you logged out.
+
+Do perfect outcoding 
+
+# Angular send two cookies one named XSRF-TOKEN with custom response header as X-XSRF-TOKEN
+
+# SCE strict Contextual escaping

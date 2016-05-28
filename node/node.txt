@@ -1,0 +1,135 @@
+#coding for asynchrony with callbacks
+
+last argument of the function should be allback function
+first argument of the callback function should be error parameter
+
+# Example of error handling function
+
+var evenDoubler = function(v,callback){
+
+	var waitTime = Math.floor(Math.random()*(maxTime+1));
+	if(v%2){
+
+		setTimeout(function(){
+		callback(new Error("odd input"));
+	},waitime);
+
+	}else{
+		setTimeout(function(){
+		callback(null,v*2,waitTime);
+	},waitTime);
+	}
+
+};
+
+var handleResults = function(err,results,time){
+	if(err){
+	console.log('error' + err.message);
+	}else{
+	console.log(results + "("+time+"ms)");
+	}
+
+};
+	evenDoubler(2,handleResults);
+
+
+for importing modules
+
+	var Bar = require('bar');
+	var justOne = require('largeModule').justOne;
+
+some built-in examples :
+fs (handle file system)
+http
+crypto (performing cryptographic functions)
+os
+
+./data data.js is in the same directory
+./other/foo foo.js is in the other subdirectory
+../lib/bar bar.js is in the lib directory "up and over "
+from this script's directory
+
+
+# use module.exports to make available the functions and the variables for other modules
+
+# request module for making http requests
+
+request('http://google.com/',function(error,response,body){
+
+	if(!error && response.statusCode === 200){
+		console.log(body);
+	}
+});
+
+
+callbacks:
+getThem(param,function(err,items){
+	//check for error
+	//operate on array of items
+});
+request/reply
+no results until all results
+either error or results
+
+
+Events:
+var results = getThem(param);
+
+results.on('item',function(i){
+//do somthing with this one item
+});
+
+results.on('done',function(){
+//no more item
+});
+
+results.on('error',function(err){
+	//	react to error
+});
+
+publish/subscribe
+Act on results as they arrive
+partial results before error
+
+
+EventEmitter class
+
+the publisher:                   the subscriber:
+emitter.emit(event,[args]);		emitter.on(event,listener);
+
+The event can be any string
+An event can be emitted with zero or more arguments
+The set of events and their arguments constitute a interface exposed to the subscriber by the publisher(emitter)
+
+
+Teo common patterns for eventEmitters:
+
+1. As a return value from a function call 
+2. Objects that extend EventEmitter to emit events themselves
+
+var e = new EventEmitter();
+process.nextTick(function(){
+e.emit('start');
+e.emit('data',++count);
+if(count == param)
+e.emit('end',count);
+
+});
+return e;
+
+
+other one's example
+
+util.inherits(Resource,EventEmitter);
+module.export = Resource;
+
+var self = this;
+self.emit('start');
+self.emit('data');
+
+
+writable stream 
+
+stdout
+stdin
+stderr
