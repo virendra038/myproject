@@ -1,0 +1,38 @@
+1. use $ sign to declare variables
+
+2. use nesting
+3. make partials with starting charcter underscore
+
+4. use @import to include partial SCSS
+
+5. use @extend .panel; to extend a class
+
+6. use mixins for example
+	use @mixin to create a mixin
+	use @include to include a mixin
+
+	@mixin border-radius($radius){
+		-webkit-border-radius:$radius;
+		-moz-border-radius:$radius;
+		-ms-border-radiusL:$radius;(IE)
+		border-radius:$radius;
+	}
+
+
+	.little-panel{
+		@extend .panel;
+		@include border-radius(5px);
+		font-size: 12px;
+	}
+	
+	.little-panel{
+		@extend .panel;
+		@include border-radius(25px);
+		font-size: 32px;
+	}
+
+7. Operations
+
+you can use addition,sub,mul div
+
+you can even multiply the background-color
