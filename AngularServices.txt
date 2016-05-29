@@ -1,0 +1,65 @@
+5 ways to create a service
+
+1. using provider()
+2. use factory()-->call provider
+3. service()-->call factory-->call provider
+4. value()
+5. constant
+
+$provide service creates a provider which contains a function that is used to create a service
+
+$provide.provider('books', function(){
+	this.$get = function(){
+		var appName = "book logger";
+		return{
+		appName:appname
+	};
+	
+	}
+
+
+});
+
+Notes: call the provider function
+Provider must have $get function
+Service the object returned from the $get function
+Configurable via the underlying provider
+
+
+value Services 
+shorthand for factory with no parameters
+Cannot be injected into a module configuration function
+can be overridden by angularjs decorator
+
+Constant Services
+Simply registers service with injector, no factory/provider calls
+
+can be injected into a module configuration function
+Cannot be overridden by an Angularjs decorator
+
+
+ex:  angular.module('app')
+	.constant('constants',{
+		APP_TITLE:'book logger',
+	})
+
+
+	angular.module('app')
+		.value('badgeService',function(){
+		retrievebadge:retrivebadge
+	});
+
+
+Dependency Annotations
+
+inform injector what services to inject
+Use to support minimization
+Three techniques available
+	implicitly from function parameter names
+	Using $inject property annotation
+	Using inline array annotation
+
+
+# popular inbuilt services 
+
+1.
