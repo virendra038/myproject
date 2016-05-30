@@ -62,4 +62,12 @@ Three techniques available
 
 # popular inbuilt services 
 
-1.
+# interceptors
+$cacheFactory
+put(key,value);
+get(key);
+remove(key);
+removeAll();
+destroy();
+info();
+

@@ -1,0 +1,31 @@
+use ls -lah to see hidden files like .gitignore
+
+# watch task
+
+	gulp.task('watch',function(){
+
+		gulp.watch('app/js/**/*.js',['scripts']);
+	});
+
+	watch js for all files ending in .js then on change run 'script' task
+
+
+	gulp.task('default',['scripts','watch']);
+	run both 'scripts and watch' task asynchronously
+	at the same time
+
+
+default task is a task that calls other task
+
+Note:	 css/*.css include all the css files in css directory
+
+	css/**/*.css include all the css files in css's sub directory
+
+	!css/style.css exclude style.css
+
+	*.+(js|css) matches all files in the root directory ending in .js or .css
+
+
+NOTES: 1. use gulp-plumber it will not kick you out if there is any mistake in syntax
+
+2. use uglify for the minification of the file
