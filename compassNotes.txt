@@ -1,0 +1,13 @@
+run compass install compass in  the folder it will create two folders named sass and stylesheets put your scss files in sass folder and in your index.html provide links for stylesheets files
+
+use @import('compass') to import compass
+
+use compass watch for watching the changes in the scss file and to generate the css file according to them
+
+#compass commands
+
+1. compass create [project name]: to create a new project
+2. compass init in already existing project with config.rb
+3. compass compile to compile scss file into css file
+4. compass watch to see the changes in the files 
+5. compass config will give you compass.rb file for the configuration
