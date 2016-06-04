@@ -1,0 +1,9 @@
+1. use self invoking functions
+
+	(function (){
+	
+	})();
+
+2. "use strict ";  to avoid bad practise in JS
+
+3. use $roorScope.$broadcast('df'); to make loose coupling
