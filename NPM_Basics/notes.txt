@@ -1,0 +1,42 @@
+git clone https://github.com/joeeames/trip-to-mars-typical
+
+1. npm -help
+2. npm install -h
+3. npm i     // npm install
+4. npm init  // create package.js
+5. npm init -y to create a package file with all the default values
+6. npm set init-author-name 'viren' //set default author name
+7. npm set init-license 'MIT'
+8. npm get init-author-name
+9. npm config delete init-author-name
+10. npm install lodash -S
+11. npm install karma -D
+12. npm list
+13. npm list --depth 1
+14. npm list --global true
+15. npm list --global true --depth 0/1/2..
+16. npm list --depth 0 --long true
+17. npm list --depth 0 --json true
+18. npm list --depth 0 --parseable true
+19. npm list --depth 0 --dev true
+20. npm list --depth 0 --prod true
+21. npm i gulp -g //global
+22. npm uninstall --save  (-g) don't use shortcut
+23. npm i underscore@1.8.2  // major functionality change, minor functionality added, patch
+24. npm i underscore">=1.1.0 <1.4.0 ||"
+25. npm i underscore@1.8.2 --save --save-exact
+26. caret(^) for latest version of major release
+27. tilde(~) for latest version of minor release
+28. use just x/* for the latest version 
+29. npm update --dev/--prod
+30. npm update -g karma // just one library at a time 
+31. npm install https://github.com/strongloop/express or any url
+32. npm install gist:[hash from url]
+33. npm install ../hello-mars (path to folder)
+34. registry.npmjs.org/package_name
+35. npm.im/package_name
+36. npm search package_name
+37. npm prune --production
+38. npm repo package_name // will open a google tab 
+39. sudo npm i npm@latest -g
+40. run your gulp commands from npm by using npn run script name
