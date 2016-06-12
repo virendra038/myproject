@@ -1,0 +1,18 @@
+blob
+rebase
+merge
+
+1. git clone url
+2. all the clones are pears
+3. git branch --all
+4. git branch branch_name
+5. git checkout branch_name
+6. git show-ref master
+7. local master point to the recent commit remote origin master points to the prevoius commit
+8. git push
+9. git fetch // fetch the data and update the origin master to the new commit from someone else
+10. then do git merge
+11. then do git push and update the both branches
+
+12. step9+10= git pull
+13. upstream concept

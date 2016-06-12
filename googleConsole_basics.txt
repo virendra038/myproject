@@ -1,0 +1,39 @@
+ctrl+shift+i  // developer console
+ctrl+shift+j  // javascript console
+
+The console
+use console.log()
+use console.warn()
+use console.error()
+use console.debug()
+use console.info()
+clear()
+
+console.assert(10 == 5*2)
+evaluate the expression on false it will show the assertion failed msg
+
+console.group()
+console.groupEnd()
+
+console.dir(document);
+
+console.time();
+console.timeEnd();
+
+debugger;
+
+use $('h1') selector for selecting dom elements
+e.g: $('#t1')
+
+use inspect($('#t1')) for inspecting elements
+
+
+use edit as html and edit attributes to add
+
+can drag and drop elements
+
+use $0 for inspecting previous selected elements, can use upto 5
+
+use search with # or xpath //html/body/h1
+
+use watch expresssion
