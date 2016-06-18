@@ -1,0 +1,10 @@
+HTML documentation flow:
+<a><span><em><img>
+inline elements can't take the width,height, margin-top,bottom property except image
+
+block level elements push other elements to new line
+
+p,h1
+we can't put block level elements inside inline elements inverse is possible
+
+:Display Property-->> we can use display inline property to make block elements behave like inline elements

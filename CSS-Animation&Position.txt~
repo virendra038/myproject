@@ -1,0 +1,94 @@
+1. use transition-property & transition-duration with hover
+2. vendor prefixes   -webkit- (chrome/safari) -moz- -o-, -ms-
+
+
+or -webkit-transtition: border-radius 2s 4s,background-color,3s 4s;
+
+
+2D transform methods
+
+skew(X,Y);
+skewX();
+skewY();
+
+Scale(widthmultiplier,heightmultiplier);
+
+rotate(deg);
+
+Translate(X-axis,Y);
+
+.box{                                    
+
+	transition: transform 2s ease-out
+
+use cubic;
+}
+
+.box{
+transform: skewX(20deg)
+
+}
+
+transition timing functions:
+
+ease()default
+start slow
+end slow
+
+linear
+
+ease in slow start 
+
+ease out end slow
+
+ease-in-out
+start slow end slow
+
+use cubic-bezier for customizing the properties of timing functions
+
+tranform in 3D space
+
+translate 3d(x,y,z);
+
+Positions:
+
+
+fixed: will get ignored from the browser and the other conponents
+
+absolute: will get ignored only by the other components //the insiders of absolute will follow to parent
+
+relative: will get ignored by the other components but original space will get maintained 
+
+and everyrhing will be according to its relative position
+
+
+absolute inside relative will behave like absulte inside relative & will respond according to the parent
+
+top,bottom,left,right will only work with the position other than static ,,basically static means no position
+
+inherit will inherit the parent's property
+
+
+float property: other elements will not ignore the height and width but the element will be removed from the doc flow
+/// the same tag elements will ignore the hight too
+use clear with float  
+
+for horizontally centering position:
+margin: 0 auto;
+
+vertically:
+position: absolute;
+top: 50%;
+margin-top: -(half of the height);
+
+both: 
+
+in container:
+position:absolute;
+top:50%;
+margin top : -half of hight;
+left:0;
+width:100%;
+
+element : horizontally centered 
+
