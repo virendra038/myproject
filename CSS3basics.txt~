@@ -8,3 +8,49 @@ p,h1
 we can't put block level elements inside inline elements inverse is possible
 
 :Display Property-->> we can use display inline property to make block elements behave like inline elements
+
+to hide a element display should be none
+
+for selecting first child: 
+p:first-child{
+	property;
+	}
+p:last-of-child{
+
+}
+
+p:nth-child(5){
+
+}
+
+#q > p{			//to select first level p
+
+}
+
+#q + p{			// to select first p after #q id element
+
+}
+
+#q ~ p{		//to slect all p after id element #q
+
+}
+
+browser starting reading css file from bottom
+
+specificity rule
+
+_      _    _     _ 
+inline id  class  tag
+
+
+CSS units:
+
+percent : this is unit is relative to its parents
+
+vw = viewport width
+vh = viewport height
+vmin= will respond to the smallest dimenstion
+
+
+em: will multiply to the value of the parent font-size
+

@@ -42,3 +42,15 @@ specificity rule
 _      _    _     _ 
 inline id  class  tag
 
+
+CSS units:
+
+percent : this is unit is relative to its parents
+
+vw = viewport width
+vh = viewport height
+vmin= will respond to the smallest dimenstion
+
+
+em: will multiply to the value of the parent font-size ,, they cascade
+

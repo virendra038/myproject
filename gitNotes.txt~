@@ -22,4 +22,3 @@ merge
 16. git stash apply [name]
 17. git stash pop
 18. git stash drop [name]
-19. git stash clear

@@ -1,0 +1,38 @@
+h,j,k,l = left,down,up,right (6l,2j)
+
+i insert
+a append
+
+w forward onw word
+cw change word upto end
+u undo
+ctrl+R redo
+:w write file save
+:w! overwrite without confirmation
+:q quit
+:wq write and quit
+yy to copy a line
+p paste text below
+6l move forward 6 charaters
+fN move forward ot next character N
+:w !sudo tee %
+:w !sudo tee example.com
+/ for search
+use r9 to replace the next character with 9
+use n to search again
+use N to search backward
+:set hlsearch for highlight the last search
+:set incsearch to search with highlight
+:%s/search/replace/gc
+gg go top of the file
+G go to end of the file
+12G to go to 12 line
+:e . to find all the files
+:e filename edit a file
+V enter visual mode
+v character visual mode
+y copy select
+:set syntax=apache
+P paste before cursor
+p paste after cursor
+. period repeats your last command
