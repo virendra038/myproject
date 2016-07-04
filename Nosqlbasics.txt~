@@ -1,0 +1,17 @@
+types:
+key-value
+Document
+Column family store
+Graph Databases
+
+volume,velocity,variety
+
+use mydatabase
+
+db.myCollection.insert([{}]);
+
+db.stats().dataSize;
+
+mongodump -d myDatabase -o ~/backups/first_backup
+
+db.dropDatabase();
